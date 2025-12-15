@@ -4,32 +4,23 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "NetCare",
+    title: "Movilidad urbana y productividad económica en ciudades de ",
     desc: [
-      "Built an infrastructure for a telemedicine startup focusing on remote patient monitoring",
-      "Created Azure environment from scratch using Terraform as a IaC tool",
-      "Developed a comprehensive CI/CD pipeline for mobile app deployment",
+      "Realice una limpieza y cambio de formato a los datos necesarios para realizar un análisis",
+      "Compare datos de diferentes fuentes para encontrar patrones en los datos",
+      "Cree un informe ejecutivo con los hallazgos acompañado de gráficas",
     ],
-    tech: ["Terraform", "Azure", "Docker", "Nginx", "GitLab CI/CD"]
+    tech: ["Python", "Jupiter Notebook"]
   },
   {
-    title: "DataMesh",
+    title: "Análisis del desempeño financiero ",
     desc: [
-      "Built an infrastructure for a data analytics platform",
-      "Configured VMs and deployed a multi-node Kubernetes cluster on AWS",
+      "Extraje y limpié datos utilizando SQL",
+      "Realice cálculos para obtener KPIs",
       "Designed to handle a high volume of ~5 million data points per day",
-      "Integrated Grafana and Prometheus for monitoring",
+      "Cree un informe ejecutivo mostrando una comparación entre el margen de ganancia y el ROI",
     ],
-    tech: ["Docker", "Kubernetes", "AWS", "Node.js", "RabbitMQ"]
-  },
-  {
-    title: "CloudEase",
-    desc: [
-      "Migrated a cloud-based CRM system from one provider to another",
-      "Built the new GCP infrastructure using Terraform as a IaC tool",
-      "Deployed logging and monitoring tools in GKE cluster",
-    ],
-    tech: ["GCP", "Terraform", "Kubernetes", "GitLab"]
+    tech: ["SQL", "Excel"]
   }
 ];
 ---
@@ -37,7 +28,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="DevOps | Sam Bernstein" />
+  <Header title="Analisis de Datos" />
   <body>
     <div class="content">
         <Sidebar selectedItem="devops" />
@@ -50,7 +41,7 @@ const projects = [
             >
           </div>
           <div class="content-container">
-            <h1>DevOps</h1>
+            <h1>Analisis de Datos</h1>
             <section class="items-container">
                 <div class="resouce-items">
                     {projects.map(project => (
